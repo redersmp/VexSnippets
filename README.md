@@ -1,1 +1,66 @@
-# VexSnippets
+# Vex Snippets
+Code snippets and examples of VEX inside Houdini
+
+Vex is a small, efficient, general purpose language for writing shaders and custom nodes.
+
+### Vex basics
+When focus is on the code window, the keyboard shortcut `alt + e` opens the Houdini script editor.
+
+When editing in the code window, press `ctrl + enter` to commit the change and update Houdini.
+
+Exit a code snippet early using the `return` statement.
+
+Trigonometry functions such as `sin` and `cos` use radians, not degrees.
+
+#### Reading parameters
+The ch*() functions evaluate a parameter and return its value.
+```
+float scale = chi("Scale");
+```
+
+#### User functions
+User functions must be declared before they are referenced and do not support recursion.
+```
+function int maximum(int a, b) {
+	if (a > b) {
+		return a;
+	}
+	return b;
+}
+```
+
+#### Creating geometry
+
+Create points, primitives, and vertices using `addpoint`, `addprim`, and `addvertex`. Alter geometry using `setattrib` and `setprimvertex`. Remove geometry using `removepoint` and `removeprim`.
+
+#### Reading geometry attributes
+
+Attributes that by convention are read / written by multiple node types.
+
+| Variable | Description |
+| --- | --- |
+|@P|Point position.|
+|@N|Normal direction.|
+|@v|Velocity.|
+|@pscale|Uniform scaling factor.|
+|@Cd|Diffuse color override.|
+
+You don't need to specify the type of commonly used attributes.
+
+#### Indexing variables
+Vex can retrieve information while looping over points or primitives in geometry.
+
+| Variable | Description |
+| --- | --- |
+|@ptnum|Point number of the current point.|
+|@numpt|Total number of points in the current geometry.|
+|@primnum|Primitive number of the current primitive.|
+|@numprim|Total number of primitives in the current geometry.|
+
+#### Global variables
+Vex supports the following implicit variables.
+
+| Variable | Description |
+| --- | --- |
+|@Time|Current time (in seconds).|
+|@Frame|Current frame.|
