@@ -1,9 +1,9 @@
-# Vex Snippets
+# VEX Snippets
 Code snippets and examples of VEX inside Houdini
 
-Vex is a small, efficient, general purpose language for writing shaders and custom nodes.
+VEX is a small, efficient, general purpose language for writing shaders and custom nodes.
 
-### Vex basics
+### VEX basics
 When focus is on the code window, the keyboard shortcut `alt + e` opens the Houdini script editor.
 
 When editing in the code window, press `ctrl + enter` to commit the change and update Houdini.
@@ -48,7 +48,7 @@ Attributes that by convention are read / written by multiple node types.
 You don't need to specify the type of commonly used attributes.
 
 #### Indexing variables
-Vex can retrieve information while looping over points or primitives in geometry.
+VEX can retrieve information while looping over points or primitives in geometry.
 
 | Variable | Description |
 | --- | --- |
@@ -58,7 +58,7 @@ Vex can retrieve information while looping over points or primitives in geometry
 |@numprim|Total number of primitives in the current geometry.|
 
 #### Global variables
-Vex supports the following implicit variables.
+VEX supports the following implicit variables.
 
 | Variable | Description |
 | --- | --- |
