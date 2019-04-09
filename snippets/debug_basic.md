@@ -1,4 +1,4 @@
-# Debuggin VEX
+# Debugging VEX
 
 #### Send debug output to the Houdini console
 
