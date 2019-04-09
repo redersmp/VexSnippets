@@ -1,5 +1,6 @@
 # Set geometry colour
-Assign colour values to points and primitives.
+
+#### Assign colour values to points and primitives
 
 @Cd, @P and @N are all vector types, so it is easy to assign them to each other.
 ```
@@ -10,7 +11,7 @@ Assign colour values to points and primitives.
 @Cd = @P;
 ```
 
-Create a colour ramp over geometry.
+#### Create a colour ramp over geometry
 ```
 @Cd = float(@ptnum) / @numpt;
 ```
