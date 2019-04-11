@@ -1,24 +1,28 @@
 # Adding movement
 
-#### Give any point velocity a normal
+#### Initialise velocity from a surface normal
 
 ```
 @v = @N;
 ```
 
-Attach the above to pop network.
+#### Initialise velocity along the z-axis
+
+```
+@v = {0,0,1};
+```
 
 #### Move any point upwards
 
 ```
-// point normal in y
+// point normal in y direction
 @N = {0,1,0};
 
 // set velocity to the new normal
 @v = @N;
 ```
 
-Attach the above to pop network.
+Attach the above to pop network to visualise.
 
 #### Blend between two objects
 ```

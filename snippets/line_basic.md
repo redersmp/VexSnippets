@@ -13,14 +13,14 @@ resize(points, pointCount);
 
 // loop through array
 for(int i = 0; i < pointCount; i++) {
-    // create new vector
-    vector pos = set(0, i, 0);
+	// create new vector
+	vector pos = set(0, i, 0);
 
-    // create point at vector
-    int point = addpoint(geoself(), pos);
+	// create point at vector
+	int point = addpoint(geoself(), pos);
 
-    // add to array
-    points[i] = point;
+	// add to array
+	points[i] = point;
 }
 
 // add polyline primitive
