@@ -1,5 +1,5 @@
 # VEX Snippets
-Code snippets and examples of VEX inside Houdini
+## Code snippets and examples of VEX inside Houdini
 
 VEX is a small, efficient, general purpose language for writing shaders and custom nodes.
 
