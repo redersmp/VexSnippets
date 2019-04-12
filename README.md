@@ -43,7 +43,7 @@ Attributes that by convention are read / written by multiple node types.
 |@N|Normal direction.|
 |@v|Velocity.|
 |@pscale|Uniform scaling factor.|
-|@Cd|Diffuse color override.|
+|@Cd|Diffuse colour override.|
 
 You don't need to specify the type of commonly used attributes.
 
