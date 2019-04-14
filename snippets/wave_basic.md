@@ -9,7 +9,7 @@ float scale = chf('Scale');
 // calculate length from origin
 float dst = length(@P);
 
-// multiple distance by scale
+// multiply distance by scale
 dst *= scale;
 
 // update y position of point
