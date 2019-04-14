@@ -1,4 +1,5 @@
 # VEX Snippets
+
 ## Code snippets and examples of VEX inside Houdini
 
 VEX is a small, efficient, general purpose language for writing shaders and custom nodes.
@@ -6,11 +7,11 @@ VEX is a small, efficient, general purpose language for writing shaders and cust
 ### VEX basics
 When focus is on the code window, the keyboard shortcut `alt + e` opens the Houdini script editor.
 
-When editing in the code window, press `ctrl + enter` to commit the change and update Houdini.
-
-Exit a code snippet early using the `return` statement.
+When editing in the code window, press `ctrl + return` to commit the change and update Houdini.
 
 Trigonometry functions such as `sin` and `cos` use radians, not degrees.
+
+Exit a code snippet early using the `return` statement.
 
 #### Reading parameters
 The ch*() functions evaluate a parameter and return its value.

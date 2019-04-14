@@ -5,6 +5,7 @@ Unlike most variables @Cd initialises to 1 rather than 0. In a colour context th
 #### Assign colour values to points and primitives
 
 @Cd, @P and @N are all vector types, so it is easy to assign them to each other.
+
 ```
 @Cd = @N;
 ```
@@ -14,6 +15,7 @@ Unlike most variables @Cd initialises to 1 rather than 0. In a colour context th
 ```
 
 #### Create a colour ramp over geometry
+
 ```
 @Cd = float(@ptnum) / @numpt;
 ```

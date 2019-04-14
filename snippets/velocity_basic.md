@@ -25,6 +25,7 @@
 Attach the above to pop network to visualise.
 
 #### Blend between two objects
+
 ```
 // get point position from second input
 vector pos = point(1, "P", @ptnum);
